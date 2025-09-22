@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <span id="time"></span>
+    <form action="https://wwww.miles-and-more.com">
+        <input type="submit" value="return">
+    </form>
+    </form>
+</body>
+<script>
+    const initTime = new Date();
+
+    setInterval(() => {
+        const now = new Date();
+        const diff = now - initTime;
+        const diffInSec = parseInt(diff / 1000);
+        document.getElementById("time").innerText = `We're here for ${diffInSec} seconds`;
+    }, 1000);
+</script>
+
+</html>
